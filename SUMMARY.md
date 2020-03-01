@@ -34,6 +34,7 @@
 
 1. [Redux 基础概念](react-state-management/Redux-基础概念.md)
 2. [Redux 中间件和异步操作](react-state-management/Redux-中间件和异步操作.md)
+3. [Redux 只能有一个 store 对象嘛](react-state-management/Redux-只能有一个-store-对象嘛.md)
 
 ## React 开发实践
 
