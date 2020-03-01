@@ -48,6 +48,7 @@
 8. [React Transition Group 源码浅析](react-develop/React-Transition-Group-源码浅析.md)
 9. [React.cloneElement 父组件向子组件注入 props](react-develop/React.cloneElement-父组件向子组件注入-props.md)
 10. [一次 Align 组件的问题记录](react-develop/一次-Align-组件的问题记录.md)
+11. [如何知道子组件的类型](react-develop/如何知道子组件的类型.md)
 
 ## Vue.js
 
