@@ -15,6 +15,7 @@
 9. [JavaScript 数据类型与类型判断](javascript/JavaScript-数据类型与类型判断.md)
 10. [for..of 和 for..in 的区别](javascript/for..of-和-for..in-的区别.md)
 11. [写给自己看的 next 函数](javascript/写给自己看的-next-函数.md)
+12. [JS 可选链与双问号](javascript/JS-可选链与双问号.md)
 
 ## CSS
 
