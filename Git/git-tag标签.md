@@ -96,7 +96,7 @@ npm version patch -m "Upgrade to %s"
 // 其中 %s 会自动替换为新的版本号，如 v1.0.2
 ```
 
-**同样，新的 tag 信息必须手动执行 `git push prigin <标签名>` 才会推送给远程**
+**同样，新的 tag 信息必须手动执行 `git push origin <标签名>` 才会推送给远程**
 
 
 ## 参考资料
