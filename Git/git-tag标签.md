@@ -19,7 +19,7 @@ git tag <标签名>
 ```shell
 git tag -a  <标签名> -m <备注信息>
 
-// git tag -a v1.0 v1.1 -m "add tag v1.1"
+// git tag -a v1.1 -m "add tag v1.1"
 备注信息是必须的
 ```
 
