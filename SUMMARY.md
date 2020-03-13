@@ -102,6 +102,7 @@
 6. [github travis ci 自动部署](web-develop-and-work-summary/github-travis-ci-自动部署.md)
 7. [浏览器缓存知识梳理](web-develop-and-work-summary/浏览器缓存知识梳理.md)
 8. [WEB 系统登录相关知识梳理](web-develop-and-work-summary/WEB-系统登录相关知识梳理.md)
+9. [将-Axios-请求参数和返回值进行格式化](web-develop-and-work-summary/将-Axios-请求参数和返回值进行格式化.md)
 
 ## 书籍
 
