@@ -104,6 +104,7 @@
 7. [浏览器缓存知识梳理](web-develop-and-work-summary/浏览器缓存知识梳理.md)
 8. [WEB 系统登录相关知识梳理](web-develop-and-work-summary/WEB-系统登录相关知识梳理.md)
 9. [将-Axios-请求参数和返回值进行格式化](web-develop-and-work-summary/将-Axios-请求参数和返回值进行格式化.md)
+10. [source-map与源码调试](web-develop-and-work-summary/source-map与源码调试.md)
 
 ## 书籍
 
