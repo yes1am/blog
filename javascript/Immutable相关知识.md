@@ -426,7 +426,10 @@ export default class App extends Component {
   }
   handleClick = () => {
     console.log('click')
-    this.setState({ store: update(this.state.store, { a: { b: { $set: 1 } } }) })
+    const newStore = update(this.state.store, { a: { b: { $set: 1 } } }) 
+
+    console.log(newStore === this.state.store) // true，即 update 的返回值是 JS 对象, 而不是 immutable 对象
+    this.setState({ store: newStore })
   }
   render = () => {
     return (
