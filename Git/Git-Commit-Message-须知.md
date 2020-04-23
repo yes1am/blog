@@ -82,6 +82,51 @@ Git 每次提交代码，都需要写 Commit message，否则不允许提交
 
 参考 [git commit message emoji 使用指南](https://github.com/liuchengxu/git-commit-emoji-cn)，
 
+## 7. commitlint  
+
+[commitlint 文档](https://commitlint.js.org/#/guides-local-setup)  
+
+对 commit message 格式进行校验:  
+
+安装 @commitlint/cli, @commitlint/config-conventional  
+`npm install --save-dev @commitlint/config-conventional @commitlint/cli`  
+
+使用 @commitlint/config-conventional 作为 lint 配置文件: 
+`echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js`  
+
+安装好以上依赖之后，可以在本地测试是否生效 `echo "test(xxx): add test" | npx commitlint`
+
+配置 husky:  
+```json
+"husky": {
+  "hooks": {
+    "pre-commit": "npm run test",
+    "commit-msg": "commitlint -e $GIT_PARAMS"  // 或者 "commitlint -E HUSKY_GIT_PARAMS"
+  }
+},
+```
+
+这样就能对 commit 信息进行 lint 了。  
+
+## 8. 根据 commit 信息自动生成 CHANGELOG
+
+[conventional-changelog-cli 文档](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli)
+
+conventional-changelog-cli 可以根据 commit 信息，通过以下命令自动生成 CHANGELOG.md 文件  
+
+`npx conventional-changelog -p angular -i CHANGELOG.md -s -r 0`  
+
+我们可以配置，当升级版本之后，自动生成 CHANGELOG.md  
+
+```json
+// package.json
+{
+  scripts: {
+    "postversion": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && git commit -m\"docs(changelog): $npm_package_version\" && git push --follow-tags"
+  }
+}
+```
+
 ## 参考资料
 1. 阮一峰 [Commit message 和 Change log 编写指南](https://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
 2. gold-miner: [AngularJS 规范中文翻译](https://github.com/yes1am/gold-miner/issues/5) 
