@@ -661,6 +661,44 @@ server {
 
 proxy_pass 的使用场景之一就是**解决跨域问题**，如上，我们通过**请求的前缀**区分前后端服务，对外统一是 `localhost`, 对内根据前缀转发到不同的服务去。从而避免跨域的问题。 
 
+**如**:
+
+配置 host:  
+
+```
+127.0.0.1 cs.dev.xxx.co.id  // 访问 cs.dev.xxx.co.id 会进入到 127.0.0.1
+```
+
+配置 nginx.conf
+
+```js
+server {
+    listen 80;
+    server_name cs.dev.xxx.co.id;
+    location / {
+        proxy_pass http://localhost:5500;
+    }
+
+    location /api {
+        proxy_pass http://localhost:3000;
+    }
+}
+```
+
+访问 cs.dev.xxx.co.id，默认的前端请求会到 5500 端口，而以 /api 开头的后端请求会到 3000 端口
+
+5500 端口的 html 内容为:  
+
+```html
+fetch('/api/name', {
+    method: 'GET',
+}).then(res => {
+    console.log("请求返回",res);
+})
+```
+
+此时，浏览器访问 cs.dev.xxx.co.id, 请求会到 5500 端口，其中 api 请求地址为 cs.dev.xxx.co.id/api/name, 该请求会转发到 3000 端口，从而完成跨域。
+
 #### 7.4.6 rewrite
 
 rewrite 用于重写 url：
