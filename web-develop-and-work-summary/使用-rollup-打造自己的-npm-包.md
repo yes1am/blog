@@ -216,8 +216,8 @@ npm set-script prepare "husky install" && npm run prepare
 ```shell
 npx husky add .husky/pre-commit "这里是你需要执行的命令，比如 npm test && npm run foo"
 ```
-注意，每次删除 .git 目录之后，需要再次执行 `yarn prepare` , 该命令修改了当前仓库的 git 中 core.hooksPath 的配置，具体配置可以查看 .git/config 文件:
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/286950/1618231235178-a2dbfdbb-a502-4239-b6ca-dd95ab51a310.png#align=left&display=inline&height=98&margin=%5Bobject%20Object%5D&name=image.png&originHeight=196&originWidth=419&size=44674&status=done&style=none&width=209.5)
+注意，每次删除 .git 目录之后，需要再次执行 `yarn prepare` , 该命令修改了当前仓库的 git 中 core.hooksPath 的配置，具体配置可以查看 .git/config 文件:  
+![image](https://user-images.githubusercontent.com/25051945/114663372-c38f4380-9d2c-11eb-8fd8-ca513a07b559.png)
 
 ## 8. 配置 Github Action
 如果不熟悉 Github Action 的话，可以先看看 [Github Action 文档](https://docs.github.com/en/actions)。
