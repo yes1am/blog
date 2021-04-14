@@ -111,6 +111,7 @@
 9. [将-Axios-请求参数和返回值进行格式化](web-develop-and-work-summary/将-Axios-请求参数和返回值进行格式化.md)
 10. [source-map与源码调试](web-develop-and-work-summary/source-map与源码调试.md)
 11. [HTTPS](web-develop-and-work-summary/HTTPS.md)
+12. [使用 rollup 打造自己的 npm 包 (全流程)](web-develop-and-work-summary/使用-rollup-打造自己的-npm-包.md)
 
 ## 书籍
 
