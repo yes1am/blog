@@ -92,6 +92,11 @@
 6. [第六章：通过源代码掌握webpack打包原理](geektime-webpack/第六章：通过源代码掌握webpack打包原理.md)
 7. [第七章：编写Loader和插件](geektime-webpack/第七章：编写Loader和插件.md)
 
+
+## webpack 实践
+
+1. [如何配置 output.library](webpack-practice/如何配置-output.library.md)
+
 ## 测试
 
 1. [初识代码测试](frontend-test/初识代码测试.md)
