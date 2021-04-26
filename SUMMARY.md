@@ -117,6 +117,7 @@
 10. [source-map与源码调试](web-develop-and-work-summary/source-map与源码调试.md)
 11. [HTTPS](web-develop-and-work-summary/HTTPS.md)
 12. [使用 rollup 打造自己的 npm 包 (全流程)](web-develop-and-work-summary/使用-rollup-打造自己的-npm-包.md)
+13. [father-build 是如何工作的](web-develop-and-work-summary/father-build-是如何工作的.md)
 
 ## 书籍
 
