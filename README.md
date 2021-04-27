@@ -1,6 +1,6 @@
 # README
 
-[我的博客](https://yes-1-am.gitbook.io/blog/)
+[我的博客大纲](https://github.com/yes1am/blog/blob/master/SUMMARY.md)，[博客地址](https://yes-1-am.gitbook.io/blog/)
 
 ## 做过的事情
 
