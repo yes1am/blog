@@ -339,16 +339,20 @@
 
 
 ```html
-<div style="display: table; height: 300px;">
-  <div style="background: blue; display: table-cell;vertical-align: middle;">
-    <div style="background: green;">
-      我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中
-      我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中
-      我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中
-      我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中
-    </div>
-  </div>
-</div>
+<table>
+	<tbody>
+    <tr>
+      <td>
+        <div style="background: green;">
+          我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中
+          我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中
+          我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中
+          我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中 我要垂直居中
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 ```
 
 display: table-cell 也是一样的:  
@@ -436,3 +440,4 @@ align-items: center;
 2. [p标签里面不能嵌套div](https://www.cnblogs.com/lovelvxia/p/5726316.html)
 3. [六种实现元素水平居中方法](https://www.cnblogs.com/chengxs/p/11231906.html)
 4. 次要参考: [CSS实现水平垂直居中的1010种方式（史上最全）](https://segmentfault.com/a/1190000016389031)
+5. 你能实现多少种水平垂直居中的布局（定宽高和不定宽高）:https://juejin.cn/post/6844903982960214029#heading-18
